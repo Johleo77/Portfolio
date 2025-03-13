@@ -14,31 +14,37 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Mon Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mon Portfolio</a>
+        
+        <!-- Bouton de bascule de thème -->
+        <div class="theme-toggle-container">
+            <button id="themeToggle" class="theme-toggle-btn">
+                <i class="fas fa-moon"></i> <!-- Icône par défaut -->
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </nav>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#veille">Veille Technologique</a> <!-- Nouvel onglet -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
     <!-- Section Accueil -->
     <section id="home" class="hero bg-info text-white text-center py-5">
@@ -88,36 +94,172 @@
     </section>
 
     <!-- Section Compétences -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Mes Compétences</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Développement Web</h4>
-                    <ul>
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>PHP, MySQL</li>
-                        <li>Frameworks : Bootstrap, React</li>
-                    </ul>
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Mes Compétences</h2>
+        
+        <!-- Développement Web -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h4 class="text-center mb-4">Développement Web</h4>
+            </div>
+            <div class="col-md-3 col-6 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="HTML/CSS">
+                <p class="mt-2">HTML/CSS</p>
+            </div>
+            <div class="col-md-3 col-6 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="JavaScript">
+                <p class="mt-2">JavaScript</p>
+            </div>
+            <div class="col-md-3 col-6 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="PHP">
+                <p class="mt-2">PHP/MySQL</p>
+            </div>
+            <div class="col-md-3 col-6 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="Bootstrap">
+                <p class="mt-2">Bootstrap</p>
+            </div>
+        </div>
+
+        <!-- Développement Mobile -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h4 class="text-center mb-4">Développement Mobile</h4>
+            </div>
+            <div class="col-md-4 col-6 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="Android">
+                <p class="mt-2">Android</p>
+            </div>
+            <div class="col-md-4 col-6 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="Kotlin">
+                <p class="mt-2">Kotlin</p>
+            </div>
+            <div class="col-md-4 col-6 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="Flutter">
+                <p class="mt-2">Flutter</p>
+            </div>
+        </div>
+
+        <!-- Outils -->
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center mb-4">Outils & Technologies</h4>
+            </div>
+            <div class="col-md-2 col-4 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="Git">
+                <p class="mt-2">Git</p>
+            </div>
+            <div class="col-md-2 col-4 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="Docker">
+                <p class="mt-2">Docker</p>
+            </div>
+            <div class="col-md-2 col-4 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="React">
+                <p class="mt-2">React</p>
+            </div>
+            <div class="col-md-2 col-4 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="Node.js">
+                <p class="mt-2">Node.js</p>
+            </div>
+            <div class="col-md-2 col-4 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="Figma">
+                <p class="mt-2">Figma</p>
+            </div>
+            <div class="col-md-2 col-4 text-center mb-4">
+                <img src="https://via.placeholder.com/100x100" class="skill-img" alt="VS Code">
+                <p class="mt-2">VS Code</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section Veille Technologique -->
+<section id="veille" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-4">Veille Technologique : IA dans les Jeux Vidéo</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Qu'est-ce que l'IA dans les jeux vidéo ?</h3>
+                <p>
+                    L'intelligence artificielle (IA) joue un rôle crucial dans les jeux vidéo, que ce soit pour créer
+                    des ennemis intelligents, des personnages non-joueurs (PNJ) réalistes, ou pour adapter la difficulté
+                    du jeu en fonction du joueur. Les avancées récentes en IA permettent des expériences de jeu plus
+                    immersives et dynamiques.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h3>Outils et technologies</h3>
+                <p>
+                    Voici quelques technologies et outils utilisés pour développer des IA dans les jeux vidéo :
+                </p>
+                <ul>
+                    <li><strong>Machine Learning</strong> : Utilisé pour créer des comportements adaptatifs.</li>
+                    <li><strong>Neural Networks</strong> : Pour des décisions complexes et réalistes.</li>
+                    <li><strong>Unity ML-Agents</strong> : Un framework pour entraîner des IA dans Unity.</li>
+                    <li><strong>Unreal Engine AI</strong> : Des outils intégrés pour créer des IA dans Unreal Engine.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Articles et ressources</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Comment l'IA révolutionne les jeux vidéo</h5>
+                        <p class="card-text">
+                            Un article détaillant comment les développeurs utilisent l'IA pour créer des jeux plus
+                            intelligents et immersifs.
+                        </p>
+                        <a href="https://www.example.com/ia-jeux-video" class="btn btn-primary" target="_blank">Lire l'article</a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Développement Mobile</h4>
-                    <ul>
-                        <li>Android (Java, Kotlin)</li>
-                        <li>Flutter</li>
-                    </ul>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Unity ML-Agents : Tutoriel pour débutants</h5>
+                        <p class="card-text">
+                            Un guide complet pour commencer à utiliser Unity ML-Agents pour entraîner des IA dans
+                            des jeux vidéo.
+                        </p>
+                        <a href="https://www.example.com/unity-ml-agents" class="btn btn-primary" target="_blank">Lire l'article</a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Outils et Technologies</h4>
-                    <ul>
-                        <li>Git, GitHub</li>
-                        <li>Docker</li>
-                        <li>Outils de développement agile</li>
-                    </ul>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">L'IA dans les jeux vidéo : Tendances 2023</h5>
+                        <p class="card-text">
+                            Une analyse des tendances actuelles en matière d'IA dans l'industrie du jeu vidéo.
+                        </p>
+                        <a href="https://www.example.com/ia-tendances-2023" class="btn btn-primary" target="_blank">Lire l'article</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Vidéos et conférences</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Conférence GDC : L'avenir de l'IA dans les jeux</h5>
+                        <p class="card-text">
+                            Une conférence passionnante sur les futures applications de l'IA dans les jeux vidéo.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=example" class="btn btn-primary" target="_blank">Regarder la vidéo</a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tutoriel : Créer une IA pour un jeu de stratégie</h5>
+                        <p class="card-text">
+                            Un tutoriel pas à pas pour développer une IA pour un jeu de stratégie en utilisant Python.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=example2" class="btn btn-primary" target="_blank">Regarder la vidéo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Section Contact -->
     <section id="contact" class="py-5 bg-light">
@@ -147,9 +289,12 @@
     </footer>
 
     <!-- Scripts de Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Votre script personnel -->
+<script src="script.js"></script>
 </body>
 
 </html>
