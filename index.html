@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=500, initial-scale=1" />
+        <title>Mon portfolio</title>
+        <meta type="description" content="Ceci est mon portfolio étudiant"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="/styles/styles.css" type="text/css" />
+    </head>
+
+    <body>
+
+        <header>
+            <div class="boxed">
+                <div class="flex aligncenter space-between">
+                    <button onclick="openMenu()" class="header-menu-mobile">
+                        <span class="material-icons">menu</span>
+                    </button>
+                <a href="/" class="header-logo">
+                    <img src="img/portfolio.png" >
+                </a>
+                <ul class="header-menu">
+                    <li><a href="#slider">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#veille">Veille</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul></div>                
+            </div></header>
+
+        <div class="slider" id="slider">
+            <img src="img/LEONARD_Johan.jpg" class="slider-background" >
+            <div class="slider-content">
+                <h1>Johan LEONARD</h1>
+                <p>Je suis étudiant en BTS SIO</p>
+            </div>
+        </div>
+
+        <div class="section" id="about">
+            <div class="boxed">
+                <div class="flex toColumn mCenter">
+                    <div class="w40 wm100">
+                        <h2>À propos de moi</h2>
+                        <a href="CV.pdf" class="btn" download>Télécharger mon CV</a>
+                    </div>
+                    <div class="w60 wm100">
+                        <p>Je suis étudiant en BTS SIO (Services Informatiques aux Organisations) au lycée Leonard de Vinci à Melun.
+                            Je suis passionné par l'informatique et le développement web. J'ai réalisé ce portfolio pour
+                            vous présenter mes compétences et mes projets.</p>
+        
+                        <!-- Parcours scolaire -->
+                        <h2 class="timeline-title">Parcours scolaire</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023-2025</div>
+                                <div class="timeline-content">
+                                    <h3>BTS SIO</h3>
+                                    <p>Lycée Leonard De Vinci, Melun</p>
+                                    <p>Option SLAM</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020-2021</div>
+                                <div class="timeline-content">
+                                    <h3>BTS MCO</h3>
+                                    <p>Lycée Etienne Bezout, Nemours</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2018-2019</div>
+                                <div class="timeline-content">
+                                    <h3>Baccalauréat STMG</h3>
+                                    <p>Option Mercatique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        
+
+
+        
+        <div class="section dark" id="skills">
+            <div class="boxed wrap text-center">
+                <h2>Découvrez mes compétences</h2>
+                <div class="flex toColumn  gap20">
+                    <div class="w25 wm100 skill">
+                        <img src="img/html.png">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="img/css.png">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="img/java.png">
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="img/kotlin.png">
+                        <h3>Kotlin</h3>
+                    </div>
+                </div>
+        
+                <!-- Nouvelle rubrique Outils de programmation -->
+                <h2 style="margin-top: 40px;">Outils de programmation</h2>
+                <div class="flex toColumn gap20">
+                    <div class="w25 wm100 skill">
+                        <img src="img/git.png">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="img/vscode.png">
+                        <h3>VS Code</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="img/thonny.png">
+                        <h3>Thonny</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="img/intellij.png">
+                        <h3>Intelliji</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section" id="experiences">
+            <div class="boxed">
+                <div class="experiences-container">
+                    <h2 class="section-title">Expériences Professionnelles</h2>
+                    
+                    <div class="experiences-grid">
+                        <!-- Expérience 1 -->
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3 class="experience-title">
+                                    <span class="icon">🏫</span>
+                                    Lycée Antonin Carême
+                                </h3>
+                                <p class="experience-location">📍 Savigny-le-Temple</p>
+                            </div>
+                            <div class="experience-content">
+                                <p class="experience-description">
+                                    conception et mise en place d'un service de drive pour un magasin du lycée.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Expérience 2 -->
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3 class="experience-title">
+                                    <span class="icon">🔬</span>
+                                    CEREEP - Ecotron IDF
+                                </h3>
+                                <p class="experience-location">📍 Saint-Pierre-lès-Nemours</p>
+                            </div>
+                            <div class="experience-content">
+                                <p class="experience-description">
+                                    Développement d'une application de contrôle de cloche avec Raspberry Pi 
+                                    dans le cadre de recherches sur la biodiversité sous conditions contrôlées.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section dark" id="projects">
+            <div class="boxed text-center">
+                <h2>Mes projets</h2>
+            <div class="flex gap20 wrap space-between">
+                <div class="w32 wm50 realisation">
+                    <a href="/">
+                    <img src="img/savon.png" ></a>
+                    <h3>Projet savon</h3>
+
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="https://github.com/Johleo77/Sushi">
+                        <img src="img/sushi.png"></a>
+                        <h3>Projet sushi</h3>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="/">
+                        <img src="img/ecotron.png"></a>
+                        <h3>Projet ecotron</h3>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="/">
+                    <img src="img/drive.png"></a>
+                    <h3>Projet drive</h3>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="/">
+                    <img src="img/commingsoon.png"></a>
+                    <h3>Projet à venir</h3>
+                </div>
+                <div class="w32 wm50 realisation">
+                    <a href="/">
+                    <img src="img/commingsoon.png"></a>
+                    <h3>Projet à venir</h3>
+                </div>
+            
+            </div>
+            </div>
+        </div>
+    <div class="section" id="veille">
+    <div class="boxed">
+        <h2 class="section-title">Veille Technologique : Création de Jeux Vidéo</h2>
+        
+        <div class="veille-grid">
+            <!-- Tendances -->
+            <div class="veille-card trend">
+                <div class="veille-icon">🚀</div>
+                <h3>Tendances 2023-2024</h3>
+                <ul>
+                    <li>Démocratisation des outils no-code (GameMaker, Core)</li>
+                    <li>Explosion de l'AI générative pour les assets (MidJourney, Scenario.gg)</li>
+                    <li>Développement cross-platform avec Godot 4.2</li>
+                    <li>Integration croissante du VR dans les moteurs mainstream</li>
+                </ul>
+            </div>
+
+            <!-- Outils -->
+            <div class="veille-card tools">
+                <div class="veille-icon">🛠️</div>
+                <h3>Stack Technique Populaire</h3>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <div class="tool-logo">⚙️</div>
+                        <p>Moteurs :<br>Unity • Unreal Engine 5 • Godot</p>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-logo">🎨</div>
+                        <p>3D :<br>Blender • ZBrush • Substance 3D</p>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-logo">📊</div>
+                        <p>Workflow :<br>GitHub • Trello • Figma</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Innovations -->
+            <div class="veille-card innovation">
+                <div class="veille-icon">💡</div>
+                <h3>Récentes Innovations</h3>
+                <div class="innovation-item">
+                    <h4>MetaHuman (Unreal Engine 5)</h4>
+                    <p>Création de personnages hyper-réalistes en temps réel</p>
+                </div>
+                <div class="innovation-item">
+                    <h4>AI NPCs (Inworld AI)</h4>
+                    <p>Personnages autonomes avec LLM (Large Language Models)</p>
+                </div>
+            </div>
+
+            <!-- Ressources -->
+            <div class="veille-card resources">
+                <div class="veille-icon">📚</div>
+                <h3>Ressources Clés</h3>
+                <ul>
+                    <li>Documentation Unreal Engine 5.3</li>
+                    <li>Chaîne YouTube : Brackeys (tutoriels Unity)</li>
+                    <li>Plateforme d'apprentissage : GDQuest</li>
+                    <li>Newsletter : Game Developer Weekly</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Flux d'actualité -->
+        <div class="news-feed">
+            <h3>Dernières Actualités</h3>
+            <div class="news-item">
+                <span class="news-date">10/2023</span>
+                <p>Sortie de Unity 6 avec de nouvelles fonctionnalités WebGPU</p>
+            </div>
+            <div class="news-item">
+                <span class="news-date">09/2023</span>
+                <p>NVIDIA annonce l'AI Playtest pour le balancing automatique</p>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+
+        <div class="section dark" id="contact">
+            <div class="boxed wrap text-center">
+                <h2>Contactez-moi</h2>
+                <div class="flex  toColumn space-between mgap20">
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">mail</span>
+                        <span class="label">E-mail</span>
+                        <span class="value">johanleonard77@gmail.com</span>
+                    </div>
+                    <div class="w32 wm100 contact">
+                        <i class="fa-brands fa-github icon"></i>
+                        <span class="label">GitHub</span>
+                        <a href="https://github.com/Johleo77" class="value">Voir mon profil</a>
+                    </div>
+                    <div class="w32 wm100 contact">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                        <span class="label">LinkedIn</span>
+                        <a href="LIEN_LINKEDIN" class="value">Voir mon profil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+                    
+        
+
+    </body>
+
+    <script src="js/app.js"></script>
+
+</html>
