@@ -314,3 +314,26 @@ function toggleDarkMode() {
         }
     });
 }
+// Fonction pour gérer les accordéons de la veille technologique
+function toggleAccordion(accordion) {
+    // Fermer tous les autres accordéons
+    const allAccordions = document.querySelectorAll('.veille-accordion');
+    allAccordions.forEach(item => {
+        if (item !== accordion && item.classList.contains('active')) {
+            item.classList.remove('active');
+        }
+    });
+    
+    // Basculer l'état de l'accordéon actuel
+    accordion.classList.toggle('active');
+}
+
+// Ouvrir le premier accordéon par défaut quand la page est chargée
+document.addEventListener('DOMContentLoaded', function() {
+    const firstAccordion = document.querySelector('.veille-accordion');
+    if (firstAccordion) {
+        setTimeout(() => {
+            firstAccordion.classList.add('active');
+        }, 500);
+    }
+});

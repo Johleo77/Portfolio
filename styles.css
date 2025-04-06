@@ -1920,3 +1920,248 @@ body.dark-mode .header-menu {
     grid-template-columns: 1fr;
   }
 }
+/* Styles pour la nouvelle section veille */
+.section-subtitle {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-top: 1rem;
+}
+
+.veille-container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.veille-accordion {
+  border: 1px solid rgba(41, 99, 255, 0.2);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.veille-accordion:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.veille-accordion-header {
+  background-color: rgba(41, 99, 255, 0.05);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.veille-accordion-header:hover {
+  background-color: rgba(41, 99, 255, 0.1);
+}
+
+.veille-accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.veille-accordion-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.veille-accordion-toggle {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease;
+}
+
+.veille-accordion.active .veille-accordion-toggle {
+  transform: rotate(180deg);
+}
+
+.veille-accordion-content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.veille-accordion.active .veille-accordion-content {
+  padding: 2rem;
+  max-height: 2000px; /* Valeur suffisamment grande */
+}
+
+.veille-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.veille-tool-item {
+  background-color: rgba(41, 99, 255, 0.05);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.veille-tool-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(41, 99, 255, 0.1);
+}
+
+.veille-tool-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.veille-tool-desc {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.veille-source-list {
+  margin-top: 4rem;
+}
+
+.veille-source-item {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.veille-source-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.veille-source-icon {
+  font-size: 2.4rem;
+  margin-right: 1.5rem;
+  color: var(--primary);
+  min-width: 2.4rem;
+}
+
+.veille-source-content {
+  flex: 1;
+}
+
+.veille-source-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.veille-source-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.veille-source-pub {
+  background-color: rgba(41, 99, 255, 0.1);
+  color: var(--primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.veille-source-date {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.veille-source-desc {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.veille-source-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 1.5rem;
+}
+
+.veille-source-link a {
+  color: var(--primary);
+  transition: transform 0.3s ease;
+}
+
+.veille-source-link a:hover {
+  transform: translateY(-2px);
+}
+
+.veille-updates {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #666;
+}
+
+/* Mode sombre */
+body.dark-mode .veille-accordion {
+  border-color: rgba(41, 99, 255, 0.3);
+}
+
+body.dark-mode .veille-accordion-header {
+  background-color: rgba(41, 99, 255, 0.1);
+}
+
+body.dark-mode .veille-accordion-header:hover {
+  background-color: rgba(41, 99, 255, 0.15);
+}
+
+body.dark-mode .veille-accordion-title {
+  color: var(--light);
+}
+
+body.dark-mode .veille-tool-item {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .veille-tool-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .veille-source-item {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+body.dark-mode .veille-updates {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .veille-tools-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .veille-source-item {
+      flex-direction: column;
+  }
+  
+  .veille-source-link {
+      margin-left: 0;
+      margin-top: 1.5rem;
+      padding-left: 0;
+  }
+}
+.veille-source-desc p {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
